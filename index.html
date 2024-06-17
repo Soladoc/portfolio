@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le monde de Soladoc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+<header class="light-mode">
+    <h1>Le monde de Soladoc</h1>
+    <button id="toggle-mode" onclick="toggleMode()">Mode Sombre</button>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="light-mode">Accueil</a></li>
+            <li><a href="projects.html" class="light-mode">Projets</a></li>
+            <li><a href="social.html" class="light-mode">Réseaux sociaux/contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="home" class="section light-mode centered-text">
+        <p>Bienvenue sur mon portfolio. Explorez mes projets et apprenez-en plus sur moi.</p>
+    </section>
+
+    <section id="about" class="section light-mode">
+        <h2>Une courte introduction</h2>
+        <p>Bonjour ! Je suis Romain Grandchamp (ou Soladoc sur internet), un étudiant en informatique. J'ai une passion pour le codage, les jeux vidéos et plus généralement l'informatique. Mon domaine préféré en informatique est les bases de données.</p>
+    </section>
+</div>
+
+<footer class="light-mode">
+    &copy; 2024 Mon Portfolio. Tous droits réservés.
+</footer>
+
+<script>
+function toggleMode() {
+    var body = document.body;
+    var header = document.querySelector('header');
+    var sections = document.querySelectorAll('.section');
+    var navLinks = document.querySelectorAll('nav ul li a');
+    var footer = document.querySelector('footer');
+    var button = document.getElementById('toggle-mode');
+
+    if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        header.classList.remove('light-mode');
+        header.classList.add('dark-mode');
+        sections.forEach(section => section.classList.remove('light-mode'));
+        sections.forEach(section => section.classList.add('dark-mode'));
+        navLinks.forEach(link => link.classList.remove('light-mode'));
+        navLinks.forEach(link => link.classList.add('dark-mode'));
+        footer.classList.remove('light-mode');
+        footer.classList.add('dark-mode');
+        button.textContent = 'Mode Clair';
+    } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        header.classList.remove('dark-mode');
+        header.classList.add('light-mode');
+        sections.forEach(section => section.classList.remove('dark-mode'));
+        sections.forEach(section => section.classList.add('light-mode'));
+        navLinks.forEach(link => link.classList.remove('dark-mode'));
+        navLinks.forEach(link => link.classList.add('light-mode'));
+        footer.classList.remove('dark-mode');
+        footer.classList.add('light-mode');
+        button.textContent = 'Mode Sombre';
+    }
+}
+</script>
+
+</body>
+</html>
