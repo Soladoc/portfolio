@@ -139,3 +139,43 @@ footer.dark-mode {
     background-color: #444;
     color: #f4f4f4;
 }
+/* Autres styles existants */
+
+#projects-menu nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#projects-menu nav ul li {
+    margin: 0 10px;
+}
+
+#projects-menu nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#projects-menu nav ul li a:hover {
+    background-color: #fff;
+    color: #ff4d4d;
+}
+
+/* Assurez-vous d'avoir les styles light-mode et dark-mode appliqués */
+body.light-mode #projects-menu nav ul li a {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+body.dark-mode #projects-menu nav ul li a {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+/* Autres styles existants */
