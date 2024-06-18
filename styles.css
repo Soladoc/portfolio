@@ -35,6 +35,11 @@ header {
     color: #fff;
 }
 
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
 body.light-mode #toggle-mode {
     background-color: #87CEFA; /* Light Sky Blue */
 }
