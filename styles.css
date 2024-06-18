@@ -179,3 +179,25 @@ body.dark-mode #projects-menu nav ul li a {
 }
 
 /* Autres styles existants */
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Assurez-vous d'avoir les styles light-mode et dark-mode appliqués */
+body.light-mode .project-image {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .project-image {
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Autres styles existants */
+
