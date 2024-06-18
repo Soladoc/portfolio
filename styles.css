@@ -202,4 +202,5 @@ body.dark-mode .project-image {
 /* Autres styles existants */
 .profil-image {
     border-radius: 50%;
+    object-fit: cover;
 }
